@@ -19,4 +19,4 @@ Ce projet vise à développer une application de classification des sentiments e
 5. **Semaine 9** : Développement de l'application.
 6. **Semaine 10** : Finalisation et rédaction du rapport.
 
- 📂 Structure du Projet
+
