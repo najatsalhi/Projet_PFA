@@ -1,0 +1,115 @@
+/* Couleurs principales */
+:root {
+    --primary: #6C63FF;
+    --secondary: #4D44DB;
+    --accent: #FF6584;
+    --light: #F8F9FA;
+    --dark: #343A40;
+    --success: #06D6A0;
+    --warning: #FFD166;
+    --danger: #FF5252;
+}
+
+/* Style général */
+.stApp {
+    background-color: #F5F7FA;
+}
+
+/* Header */
+header {
+    background-color: var(--primary);
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary) !important;
+}
+
+/* Boutons */
+.stButton>button {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: all 0.3s;
+}
+
+.stButton>button:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Zone de texte */
+.stTextArea>textarea {
+    border-radius: 10px;
+    padding: 1rem;
+    border: 2px solid #E9ECEF;
+}
+
+.stTextArea>textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+}
+
+/* Sidebar */
+.css-1d391kg {
+    background-color: white;
+    border-right: 1px solid #E9ECEF;
+}
+
+/* Cartes */
+.stMetric {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Highlight */
+.highlight {
+    background-color: rgba(108, 99, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--primary);
+}
+
+/* Onglets */
+.stTabs [role="tablist"] {
+    gap: 10px;
+}
+
+.stTabs [role="tab"] {
+    border-radius: 8px 8px 0 0 !important;
+    padding: 0.5rem 1rem;
+    background-color: #E9ECEF;
+    color: var(--dark);
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+/* Tableaux */
+.stDataFrame {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Spinner */
+.stSpinner>div {
+    border: 4px solid rgba(108, 99, 255, 0.2);
+    border-radius: 50%;
+    border-top: 4px solid var(--primary);
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
